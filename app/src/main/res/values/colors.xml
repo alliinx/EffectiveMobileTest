@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_green">#0C0C0C</color>
+    <color name="black_russian">#1D1E20</color>
+    <color name="ebony">#2F3035</color>
+    <color name="payne_s_grey">#3E3F43</color>
+    <color name="bright_grey">#5E5F61</color>
+    <color name="dark_grey">#9F9F9F</color>
+    <color name="gainsboro">#DBDBDB</color>
+    <color name="cerulean_blue">#2269BC</color>
+    <color name="cerulean_blue_alpha_50">#802269BC</color>
+    <color name="prussian_blue">#00427D</color>
+    <color name="hunter_green">#3A633B</color>
+    <color name="palm_green">#1E341F</color>
+    <color name="bittersweet">#FF5E5E</color>
+    <color name="sun">#F36E36</color>
+</resources>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/сard_view_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/black_russian"
+        app:cardCornerRadius="16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="20dp">
+
+            <TextView
+                android:id="@+id/price_ticket"
+                style="@style/HeaderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/price_offers_tickets"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/circle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_circle"
+                android:backgroundTint="@color/bittersweet"
+                app:layout_constraintBottom_toBottomOf="@+id/departureAirport"
+                app:layout_constraintStart_toStartOf="@+id/price_ticket"
+                app:layout_constraintTop_toTopOf="@+id/departureTime" />
+
+            <TextView
+                android:id="@+id/departureTime"
+                style="@style/ItalicTitleWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/circle"
+                app:layout_constraintTop_toBottomOf="@+id/price_ticket"
+                tools:text="03:15" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="10dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="1dp"
+                android:background="@color/dark_grey"
+                app:layout_constraintBottom_toBottomOf="@+id/departureTime"
+                app:layout_constraintStart_toEndOf="@+id/departureTime"
+                app:layout_constraintTop_toTopOf="@+id/departureTime" />
+
+            <TextView
+                android:id="@+id/arrivalTime"
+                style="@style/ItalicTitleWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/price_ticket"
+                tools:text="07:10" />
+
+            <TextView
+                android:id="@+id/departureAirport"
+                style="@style/ItalicTitleGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/departureTime"
+                app:layout_constraintStart_toStartOf="@+id/departureTime"
+                app:layout_constraintTop_toBottomOf="@+id/departureTime"
+                tools:text="VKO" />
+
+            <TextView
+                android:id="@+id/arrivalAirport"
+                style="@style/ItalicTitleGrey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="@+id/arrivalTime"
+                app:layout_constraintStart_toEndOf="@+id/view2"
+                app:layout_constraintTop_toBottomOf="@+id/departureTime"
+                tools:text="AER" />
+
+            <TextView
+                android:id="@+id/trip_time"
+                style="@style/TextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:text="@string/trip_time"
+                app:layout_constraintEnd_toStartOf="@+id/slash"
+                app:layout_constraintTop_toBottomOf="@+id/price_ticket" />
+
+            <TextView
+                android:id="@+id/slash"
+                style="@style/TextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="1dp"
+                android:text="@string/slash"
+                android:textColor="@color/dark_grey"
+                app:layout_constraintEnd_toStartOf="@+id/has_transfer"
+                app:layout_constraintTop_toBottomOf="@+id/price_ticket" />
+
+            <TextView
+                android:id="@+id/has_transfer"
+                style="@style/TextWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="15dp"
+                android:text="@string/no_transfer_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price_ticket" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_badge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:backgroundTint="@color/cerulean_blue"
+        app:cardCornerRadius="16dp">
+
+        <TextView
+            android:id="@+id/badge"
+            style="@style/ItalicTitleWhite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            tools:text="Прилет вечером" />
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

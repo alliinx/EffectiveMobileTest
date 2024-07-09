@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_marginStart="60dp"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="20dp"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edit_text_from_offers_screen"
+        style="@style/SearchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/payne_s_grey"
+        android:hint="@string/hint_edit_text_from"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_grey" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/bright_grey" />
+
+    <EditText
+        android:id="@+id/edit_text_to_offers_screen"
+        style="@style/SearchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/payne_s_grey"
+        android:hint="@string/hint_edit_text_to"
+        android:inputType="text"
+        android:textColor="@color/white"
+        android:textColorHint="@color/dark_grey" />
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.chip.ChipGroup
+        android:id="@+id/chipGroupSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:selectionRequired="true"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipBackDateTrip"
+            style="@style/ChipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:checked="true"
+            android:text="@string/back_chip_title"
+            android:textAppearance="@style/ItalicTitleWhite"
+            app:chipIcon="@drawable/ic_add"
+            app:chipIconSize="20dp"
+            app:chipIconVisible="true"
+            app:iconStartPadding="5dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipDateTrip"
+            style="@style/ChipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:textAppearance="@style/ItalicTitleWhite"
+            tools:text="24 фев, сб" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipPassengers"
+            style="@style/ChipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/passenger_chip_title"
+            android:textAppearance="@style/ItalicTitleWhite"
+            app:chipIcon="@drawable/ic_passenger"
+            app:chipIconSize="15dp"
+            app:chipIconVisible="true"
+            app:iconStartPadding="10dp" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chipFilters"
+            style="@style/ChipButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:text="@string/filters_chip_title"
+            android:textAppearance="@style/ItalicTitleWhite"
+            app:chipIcon="@drawable/ic_filter"
+            app:chipIconSize="15dp"
+            app:chipIconVisible="true"
+            app:iconStartPadding="10dp" />
+    </com.google.android.material.chip.ChipGroup>
+
+</LinearLayout>

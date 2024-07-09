@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnHardTrip"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="10dp"
+        android:background="@drawable/bg_hard_trip"
+        android:src="@drawable/ic_hard_trip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHardTrip"
+        style="@style/TextWhite"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hard_trip_title"
+        app:layout_constraintEnd_toEndOf="@+id/btnHardTrip"
+        app:layout_constraintStart_toStartOf="@+id/btnHardTrip"
+        app:layout_constraintTop_toBottomOf="@+id/btnHardTrip" />
+
+    <ImageButton
+        android:id="@+id/btnEverywhereTrip"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_everywhere_trip"
+        android:src="@drawable/ic_everywhere_trip"
+        app:layout_constraintEnd_toStartOf="@+id/btnWeekendTrip"
+        app:layout_constraintStart_toEndOf="@+id/btnHardTrip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEverywhereTrip"
+        style="@style/TextWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/everywhere_trip_title"
+        app:layout_constraintEnd_toEndOf="@+id/btnEverywhereTrip"
+        app:layout_constraintStart_toStartOf="@+id/btnEverywhereTrip"
+        app:layout_constraintTop_toBottomOf="@+id/btnEverywhereTrip" />
+
+    <ImageButton
+        android:id="@+id/btnWeekendTrip"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_weekend_trip"
+        android:src="@drawable/ic_weekend_trip"
+        app:layout_constraintEnd_toStartOf="@+id/btnHotTickets"
+        app:layout_constraintStart_toEndOf="@+id/btnEverywhereTrip"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvWeekendTrip"
+        style="@style/TextWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/weekend_trip_title"
+        app:layout_constraintEnd_toEndOf="@+id/btnWeekendTrip"
+        app:layout_constraintStart_toStartOf="@+id/btnWeekendTrip"
+        app:layout_constraintTop_toBottomOf="@+id/btnWeekendTrip" />
+
+    <ImageButton
+        android:id="@+id/btnHotTickets"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/bg_hot_tickets"
+        android:src="@drawable/ic_hot_tickets"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvHotTickets"
+        style="@style/TextWhite"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/hot_tickets_title"
+        app:layout_constraintEnd_toEndOf="@+id/btnHotTickets"
+        app:layout_constraintStart_toStartOf="@+id/btnHotTickets"
+        app:layout_constraintTop_toBottomOf="@+id/btnHotTickets" />
+</androidx.constraintlayout.widget.ConstraintLayout>

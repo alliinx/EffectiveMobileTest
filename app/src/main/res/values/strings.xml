@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">TestTaskEffectiveMobile</string>
+    <!-- Bottom Nav View Menu -->
+    <string name="tickets_title_menu">Авиабилеты</string>
+    <string name="hotel_title_menu">Отели</string>
+    <string name="map_title_menu">Короче</string>
+    <string name="subscribe_title_menu">Подписки</string>
+    <string name="account_title_menu">Профиль</string>
+    <!-- Offers Fragment -->
+    <string name="title_search_tickets">Поиск дешевых \n авиабилетов</string>
+    <string name="hint_edit_text_from">Откуда - Москва</string>
+    <string name="hint_edit_text_to">Куда - Турция</string>
+    <string name="title_offers">Музыкально отлететь</string>
+    <string name="price_offers">от %1$d %2$s ₽</string>
+    <!-- Errors -->
+    <string name="error">Произошла ошибка</string>
+    <!-- Search Bottom Sheet Fragment -->
+    <string name="hard_trip_title">Сложный маршрут</string>
+    <string name="everywhere_trip_title">Куда угодно</string>
+    <string name="weekend_trip_title">Выходные</string>
+    <string name="hot_tickets_title">Горячие билеты</string>
+    <string name="stambul_title">Стамбул</string>
+    <string name="popular_trip_title">Популярное направление</string>
+    <string name="sochi_title">Сочи</string>
+    <string name="phuket_title">Пхукет</string>
+    <!-- Offers Tickets Fragment -->
+    <string name="back_chip_title">обратно</string>
+    <string name="passenger_chip_title">1,эконом</string>
+    <string name="filters_chip_title">фильтры</string>
+    <string name="title_rv_offers_tickets">Прямые рейсы</string>
+    <string name="title_show_all_offers_tickets">Показать все</string>
+    <string name="btn_text_show_all_tickets">Посмотреть все билеты</string>
+    <string name="reminder_title">Подписка на цену</string>
+    <string name="price_offers_tickets">%1$d %2$s ₽</string>
+    <string name="reminder_switcher_toast_true">Вы подписались на цену</string>
+    <string name="reminder_switcher_toast_false">Вы отписались от цены</string>
+    <!-- Tickets Fragment -->
+    <string name="cities_trip_title">%1$s-%2$s</string>
+    <plurals name="date_passengers_trip_title">
+        <item quantity="one">%1$s, %2$d пассажир</item>
+        <item quantity="few">%1$s, %2$d пассажира</item>
+        <item quantity="many">%1$s, %2$d пассажиров</item>
+    </plurals>
+    <string name="trip_time">%1$sч в пути</string>
+    <string name="slash">/</string>
+    <string name="filter">Фильтр</string>
+    <string name="chart">График цен</string>
+    <string name="no_transfer_title">Без пересадок</string>
+</resources>
